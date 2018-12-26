@@ -8,12 +8,9 @@ using System.Threading.Tasks;
 
 namespace PollWebAPI.Entities
 {
-    public class Poll 
+    public class PollRequest
     {
-        [BsonId(true)]
-        public int poll_Id { get; set; }
         public string  poll_description { get; set; }
-        public int poll_views { get; set; }        
-        public List<PollOptions> options { get; set; }
+        public List<string> options { get; set; }
     }
 }

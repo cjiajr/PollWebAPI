@@ -8,6 +8,6 @@ namespace PollWebAPI.Entities
     public class PollStats
     {
         public int views { get; set; }
-        public IList<PollOptions> votes { get; set; }
+        public object votes { get; set; }
     }
 }
